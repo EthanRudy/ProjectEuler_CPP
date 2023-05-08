@@ -1,6 +1,6 @@
 # ProjectEuler_CPP
 
-This is a repository for showcasing my Project Euler solutions writtin in C++. Publicly my solutions will only appear up to 100, to be within the Project Euler post rules.
+This is a repository for showcasing my Project Euler solutions writtin in C++. Publicly my solutions will only appear up to 100, to be within the Project Euler post rules. I will update this file to display what solution number I am on after the first 100 are solved.
 
 My rules for my code is as follows:
 1. All solutions must be mine. Obviously if I use a well known algorithm like a quicksort, I am not claiming it as my original creation.
