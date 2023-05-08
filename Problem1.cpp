@@ -17,6 +17,6 @@ int main() {
 
 	std::cout << "Answer: " << sum << "\n";
 	std::cout << "Found in " << timer.duration(microsecond) << " microseconds\n";
-  
-        // 2-3 Microseconds
+	
+	// 2-3 Microseconds
 }
