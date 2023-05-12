@@ -31,20 +31,7 @@ void seiveOfEratosthenes(int n, std::vector<long long>& res) {
 	}
 }
 
-std::vector<long long> factors(long long n) {
-	std::vector<long long> factVec;
-	for (long long i = 1; i <= n; ++i) {
-		if (n % i == 0) {
-			factVec.push_back(i);
-		}
-	}
-
-	return factVec;
-}
-
-std::vector<long long> prime_factors(long long n) {
-	std::vector<long long> factVec;
-
+void prime_factors(long long n, std::vector<long long>& factVec) {
 	while (n % 2 == 0) { 
 		n /= 2; 
 		if (factVec.size() == 0) { factVec.push_back(2); }
@@ -58,6 +45,4 @@ std::vector<long long> prime_factors(long long n) {
 	}
 
 	if (n > 2) { factVec.push_back(n); }
-
-	return factVec;
 }
