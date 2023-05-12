@@ -12,6 +12,25 @@ bool prime(long long n) {
 	return true;
 }
 
+void seiveOfEratosthenes(int n, std::vector<long long>& res) {
+	bool* prime = (bool*)malloc(sizeof(bool) * n);
+	memset(prime, true, sizeof(bool) * n);
+
+	for (int p = 2; p * p <= n; ++p) {
+		if (prime[p]) {
+			for (int i = p * p; i <= n; i += p) {
+				prime[i] = false;
+			}
+		}
+	}
+
+	std::vector<long long> primes;
+
+	for (int i = 2; i <= n; ++i) {
+		if (prime[i]) { res.push_back(i); }
+	}
+}
+
 std::vector<long long> factors(long long n) {
 	std::vector<long long> factVec;
 	for (long long i = 1; i <= n; ++i) {
