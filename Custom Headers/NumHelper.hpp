@@ -10,7 +10,7 @@ bool palindrome(long long n) {
 }
 
 void factors(long long n, std::vector<int>& factVec) {
-	for (long long i = 1; i <= n; ++i) {
+	for (long long i = 1; i < n; ++i) {
 		if (n % i == 0) {
 			factVec.push_back(i);
 		}
