@@ -1,6 +1,6 @@
+// TODO
 /*
-  String based solution
-  Not the fastest it could be but it gets the job done
+* File info
 */
 
 #include <iostream>
@@ -640,6 +640,12 @@ BigInt lcm(const long long& n1, const BigInt& n2) {
 // LCM(String, BigInt)
 BigInt lcm(const std::string& n1, const BigInt& n2) {
 	return lcm(BigInt(n1), n2);
+}
+
+// Factorial
+BigInt factorial(const BigInt& n) {
+	if (n == 1) { return 1; }
+	return n * factorial(n - 1);
 }
 
 #endif BIGINT_MATH_HPP
