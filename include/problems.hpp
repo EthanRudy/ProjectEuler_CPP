@@ -2,3 +2,4 @@
 #include "../solutions/p002.hpp"
 #include "../solutions/p003.hpp"
 #include "../solutions/p004.hpp"
+#include "../solutions/p005.hpp"
