@@ -6,3 +6,4 @@
 #include "../solutions/p006.hpp"
 #include "../solutions/p007.hpp"
 #include "../solutions/p008.hpp"
+#include "../solutions/p009.hpp"
