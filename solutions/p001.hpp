@@ -1,5 +1,7 @@
 #include "../include/Timer.hpp"
 
+#include <iostream>
+
 void problem001() {
 	precise_timer timer;
 
@@ -14,5 +16,5 @@ void problem001() {
 	int duration = timer.get_duration<int, std::chrono::nanoseconds>();
 	std::cout << "Solution: " << sum << "\n";
 	std::cout << "Solution found in " << duration << " nanoseconds";
-	// ~Avg runtime: 1.2 - 1.3 microseconds
+	// Avg runtime: 1.2 - 1.3 microseconds
 }
