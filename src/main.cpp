@@ -3,6 +3,6 @@
 #include "../include/problems.hpp"
 
 int main() {
-	problem007();
+	problem008();
 	return 0;
 }
