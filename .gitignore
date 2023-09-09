@@ -1,6 +1,7 @@
 \v17
-*.vcxproj
-*.filters
-*.user
+\x64
+\.vs
 *.sln
-*.vsidx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
