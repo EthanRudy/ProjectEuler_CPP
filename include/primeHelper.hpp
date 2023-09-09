@@ -61,7 +61,6 @@ std::vector<int> primeFactors(int n) {
 	return factVec;
 }
 
-
 std::vector<long> primeFactors(long n) {
 	std::vector<long> factVec;
 
@@ -82,7 +81,6 @@ std::vector<long> primeFactors(long n) {
 	return factVec;
 }
 
-
 std::vector<long long> primeFactors(long long n) {
 	std::vector<long long> factVec;
 
@@ -101,4 +99,25 @@ std::vector<long long> primeFactors(long long n) {
 	if (n > 2) { factVec.push_back(n); }
 
 	return factVec;
+}
+
+std::vector<int> seiveofEratosthenes(int max) {
+	if (max < 1) { throw std::invalid_argument("Argument must be positive and nonzero."); }
+	bool* prime = (bool*)malloc(sizeof(bool) * max);
+	memset(prime, true, sizeof(bool) * max);
+
+	for (int p = 2; p * p<= max; ++p) {
+		if (prime[p]) {
+			for (int i = p * p; i <= max; i += p) {
+				prime[i] = false;
+			}
+		}
+	}
+
+	std::vector<int> primes;
+	for (int i = 2; i < max; ++i) {
+		if (prime[i]) { primes.push_back(i); }
+	}
+
+	return primes;
 }

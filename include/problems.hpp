@@ -7,3 +7,4 @@
 #include "../solutions/p007.hpp"
 #include "../solutions/p008.hpp"
 #include "../solutions/p009.hpp"
+#include "../solutions/p010.hpp"
