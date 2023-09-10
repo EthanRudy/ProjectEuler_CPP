@@ -9,3 +9,4 @@
 #include "../solutions/p009.hpp"
 #include "../solutions/p010.hpp"
 #include "../solutions/p011.hpp"
+#include "../solutions/p012.hpp"
