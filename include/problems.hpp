@@ -15,3 +15,4 @@
 #include "../solutions/p015.hpp"
 #include "../solutions/p016.hpp"
 #include "../solutions/p017.hpp"
+#include "../solutions/p018.hpp"
