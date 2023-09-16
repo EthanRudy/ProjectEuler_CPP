@@ -12,3 +12,4 @@
 #include "../solutions/p012.hpp"
 #include "../solutions/p013.hpp"
 #include "../solutions/p014.hpp"
+#include "../solutions/p015.hpp"
