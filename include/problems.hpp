@@ -14,3 +14,4 @@
 #include "../solutions/p014.hpp"
 #include "../solutions/p015.hpp"
 #include "../solutions/p016.hpp"
+#include "../solutions/p017.hpp"
