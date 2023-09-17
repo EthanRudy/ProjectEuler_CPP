@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <algorithm>
+#include <vector>
 
 bool palindrome(int n) {
 	std::string rstr = std::to_string(n);

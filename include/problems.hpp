@@ -18,3 +18,4 @@
 #include "../solutions/p018.hpp"
 #include "../solutions/p019.hpp"
 #include "../solutions/p020.hpp"
+#include "../solutions/p021.hpp"
