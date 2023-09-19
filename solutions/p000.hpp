@@ -40,7 +40,7 @@ private:
 public:
 
 	void run(){
-		precise_timer timer
+		precise_timer timer;
 
 		int duration = timer.get_duration<int, std::chrono::seconds>();
 		std::cout << "Solution: " << "ANSWER" << "\n";
