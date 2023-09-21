@@ -23,3 +23,4 @@
 #include "../solutions/p023.hpp"
 #include "../solutions/p024.hpp"
 #include "../solutions/p025.hpp"
+#include "../solutions/p026.hpp"
