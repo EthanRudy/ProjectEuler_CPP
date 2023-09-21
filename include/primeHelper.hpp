@@ -6,7 +6,7 @@
 */
 
 bool prime(int n) {
-	if (n == 1) { return false; }
+	if (n < 2) { return false; }
 
 	int i = 2;
 	while (i * i <= n) {
@@ -18,7 +18,7 @@ bool prime(int n) {
 }
 
 bool prime(long n) {
-	if (n == 1) { return false; }
+	if (n < 2) { return false; }
 
 	long i = 2;
 	while (i * i <= n) {
@@ -30,7 +30,7 @@ bool prime(long n) {
 }
 
 bool prime(long long n) {
-	if (n == 1) { return false; }
+	if (n < 2) { return false; }
 
 	long long i = 2;
 	while (i * i <= n) {
