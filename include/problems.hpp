@@ -26,3 +26,4 @@
 #include "../solutions/p026.hpp"
 #include "../solutions/p027.hpp"
 #include "../solutions/p028.hpp"
+#include "../solutions/p029.hpp"
