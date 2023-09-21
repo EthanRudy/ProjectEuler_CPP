@@ -50,7 +50,7 @@ public:
 		int duration = timer.get_duration<int, std::chrono::milliseconds>();
 		std::cout << "Solution: " << sum << "\n";
 		std::cout << "Solution found in " << duration << " milliseconds";
-		// Avg runtime: 1 milliseconds
+		// Avg runtime: 1200 milliseconds
 	}
 
 	bool abundantSum(int n) {

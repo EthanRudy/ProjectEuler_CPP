@@ -16,7 +16,7 @@
 	so 23 would be 023, 4 would be 004, etc
 */
 int main() {
-	P023 sol;
+	P024 sol;
 	sol.run();
 	return 0;
 }
