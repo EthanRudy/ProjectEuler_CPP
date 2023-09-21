@@ -20,3 +20,4 @@
 #include "../solutions/p020.hpp"
 #include "../solutions/p021.hpp"
 #include "../solutions/p022.hpp"
+#include "../solutions/p023.hpp"

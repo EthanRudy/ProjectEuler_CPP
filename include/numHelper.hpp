@@ -59,3 +59,22 @@ int numOfFacts(long long n) {
 
 	return facts;
 }
+
+int sumFacts(int n) {
+	// Optimized to not use factors() function
+
+	int sum = 1;	// Pre-add 1, bc its not in a pair with n
+
+	for (int i = 2; i * i <= n; ++i) {
+		div_t d = div(n, i);
+		if (d.rem == 0) {
+			sum += i;
+
+			if (d.quot != i) {	// Perfect squares have mirrored factor pairs, but we only want one
+				sum += d.quot;
+			}
+		}
+	}
+
+	return sum;
+}
