@@ -22,3 +22,4 @@
 #include "../solutions/p022.hpp"
 #include "../solutions/p023.hpp"
 #include "../solutions/p024.hpp"
+#include "../solutions/p025.hpp"
