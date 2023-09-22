@@ -28,3 +28,4 @@
 #include "../solutions/p028.hpp"
 #include "../solutions/p029.hpp"
 #include "../solutions/p030.hpp"
+#include "../solutions/p031.hpp"
