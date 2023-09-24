@@ -78,3 +78,17 @@ int sumFacts(int n) {
 
 	return sum;
 }
+
+bool pandigital(std::string str) {
+	int digits[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+	for (char c : str) {
+		++digits[(c - '0') - 1];
+	}
+
+	for (int i = 0; i < str.size(); ++i) {
+		if (digits[i] != 1) { return false; }
+	}
+
+	return true;
+}
