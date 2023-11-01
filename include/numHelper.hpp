@@ -1,6 +1,8 @@
 #pragma once
-#include <string>
+
 #include <algorithm>
+#include "BigInt.hpp"
+#include <string>
 #include <vector>
 
 bool palindrome(int n) {
@@ -100,4 +102,10 @@ int gcd(int a, int b) {
 	}
 
 	return res;
+}
+
+// Yes not a BigInt
+int factorial(int n) {
+	if (n < 2) { return n; }
+	return n * factorial(n - 1);
 }

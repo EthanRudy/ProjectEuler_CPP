@@ -343,7 +343,7 @@ inline bool BigInt::operator==(const BigInt& o) const {
 
 	if (num.size() != o.num.size()) { return false; }
 
-	for (int i = num.size(); i > -1; --i) {
+	for (int i = num.size() - 1; i > -1; --i) {
 		if (num[i] != o.num[i]) { return false; }
 	}
 
@@ -355,7 +355,7 @@ inline bool BigInt::operator!=(const BigInt& o) const {
 
 	if (num.size() != o.num.size()) { return true; }
 
-	for (int i = num.size(); i > -1; --i) {
+	for (int i = num.size() - 1; i > -1; --i) {
 		if (num[i] != o.num[i]) { return true; }
 	}
 
@@ -369,7 +369,7 @@ inline bool BigInt::operator>(const BigInt& o) const {
 	if (num.size() > o.num.size()) { return neg ? false : true; }
 	if (num.size() < o.num.size()) { return neg ? true : false; }
 
-	for (int i = num.size(); i > -1; --i) {
+	for (int i = num.size() - 1; i > -1; --i) {
 		if (num[i] < o.num[i]) { return neg ? true : false; }
 		if (num[i] > o.num[i]) { return neg ? false : true; }
 	}
@@ -384,7 +384,7 @@ inline bool BigInt::operator<(const BigInt& o) const {
 	if (num.size() > o.num.size()) { return neg ? true : false; }
 	if (num.size() < o.num.size()) { return neg ? false : true; }
 
-	for (int i = num.size(); i > -1; --i) {
+	for (int i = num.size() - 1; i > -1; --i) {
 		if (num[i] < o.num[i]) { return neg ? false : true; }
 		if (num[i] > o.num[i]) { return neg ? true : false; }
 	}
@@ -399,7 +399,7 @@ inline bool BigInt::operator>=(const BigInt& o) const {
 	if (num.size() > o.num.size()) { return neg ? false : true; }
 	if (num.size() < o.num.size()) { return neg ? true : false; }
 
-	for (int i = num.size(); i > -1; --i) {
+	for (int i = num.size() - 1; i > -1; --i) {
 		if (num[i] < o.num[i]) { return neg ? true : false; }
 		if (num[i] > o.num[i]) { return neg ? false : true; }
 	}
@@ -414,7 +414,7 @@ inline bool BigInt::operator<=(const BigInt& o) const {
 	if (num.size() > o.num.size()) { return neg ? true : false; }
 	if (num.size() < o.num.size()) { return neg ? false : true; }
 
-	for (int i = num.size(); i > -1; --i) {
+	for (int i = num.size() - 1; i > -1; --i) {
 		if (num[i] < o.num[i]) { return neg ? false : true; }
 		if (num[i] > o.num[i]) { return neg ? true : false; }
 	}
