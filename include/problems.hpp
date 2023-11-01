@@ -32,3 +32,4 @@
 #include "../solutions/p032.hpp"
 #include "../solutions/p033.hpp"
 #include "../solutions/p034.hpp"
+#include "../solutions/p035.hpp"

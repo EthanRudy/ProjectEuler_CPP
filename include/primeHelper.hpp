@@ -121,3 +121,21 @@ std::vector<int> seiveofEratosthenes(int max) {
 
 	return primes;
 }
+
+void seiveofEratosthenes(int max, std::vector<int>& vec) {
+	if (max < 1) { throw std::invalid_argument("Argument must be positive and nonzero."); }
+	bool* prime = (bool*)malloc(sizeof(bool) * max);
+	memset(prime, true, sizeof(bool) * max);
+
+	for (int p = 2; p * p<= max; ++p) {
+		if (prime[p]) {
+			for (int i = p * p; i <= max; i += p) {
+				prime[i] = false;
+			}
+		}
+	}
+
+	for (int i = 2; i < max; ++i) {
+		if (prime[i]) { vec.push_back(i); }
+	}
+}
