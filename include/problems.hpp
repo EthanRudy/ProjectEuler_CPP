@@ -30,3 +30,4 @@
 #include "../solutions/p030.hpp"
 #include "../solutions/p031.hpp"
 #include "../solutions/p032.hpp"
+#include "../solutions/p033.hpp"

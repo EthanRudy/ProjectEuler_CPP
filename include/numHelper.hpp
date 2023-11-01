@@ -92,3 +92,12 @@ bool pandigital(std::string str) {
 
 	return true;
 }
+
+int gcd(int a, int b) {
+	int res = (a > b) ? b : a;
+	while (res > 0) {
+		if (a % res == 0 && b % res == 0) { break; }
+	}
+
+	return res;
+}
