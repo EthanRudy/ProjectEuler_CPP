@@ -34,3 +34,4 @@
 #include "../solutions/p034.hpp"
 #include "../solutions/p035.hpp"
 #include "../solutions/p036.hpp"
+#include "../solutions/p037.hpp"
