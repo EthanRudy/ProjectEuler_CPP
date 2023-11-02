@@ -37,3 +37,5 @@
 #include "../solutions/p037.hpp"
 #include "../solutions/p038.hpp"
 #include "../solutions/p039.hpp"
+#include "../solutions/p040.hpp"
+#include "../solutions/p041.hpp"
