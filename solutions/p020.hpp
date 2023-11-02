@@ -1,5 +1,5 @@
-#ifndef PXXX_HPP
-#define PXXX_HPP
+#ifndef P020_HPP
+#define P020_HPP
 
 #include "p000.hpp"
 #include "../include/Timer.hpp"
