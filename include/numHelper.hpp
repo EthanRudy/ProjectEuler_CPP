@@ -13,6 +13,13 @@ bool palindrome(int n) {
 	return (str == rstr);
 }
 
+bool palindrome(const std::string& str) {
+	std::string rstr = str;
+	std::reverse(rstr.begin(), rstr.end());
+	
+	return (rstr == str);
+}
+
 
 std::vector<int> factors(int n) {
 	std::vector<int> factVec;
@@ -108,4 +115,32 @@ int gcd(int a, int b) {
 int factorial(int n) {
 	if (n < 2) { return n; }
 	return n * factorial(n - 1);
+}
+
+// Ended up not using this in Problem 036 but maybe it'll get used, either way I'm saving it for my discrete math homework
+std::string dec_to_bin(int n) {
+	if (n == 0) { return "0"; }
+
+	std::string bin = "";
+
+	while (n > 0) {
+		bin = std::to_string(n % 2) + bin;
+		n /= 2;
+	}
+
+	return bin;
+}
+
+// Slay new base n converter (Go too high and the ascii skip will get wacky)
+std::string base_n_str(int n, int base) {
+	std::string res = "";
+
+	while (n > 0) {
+		int d = n % base;
+		res += ((d >= 0 && d <= 9) ? d + '0' : d + 'A');
+		n /= base;
+	}
+	
+	std::reverse(res.begin(), res.end());
+	return res;
 }
