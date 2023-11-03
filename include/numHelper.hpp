@@ -144,3 +144,7 @@ std::string base_n_str(int n, int base) {
 	std::reverse(res.begin(), res.end());
 	return res;
 }
+
+int nth_tri(int n) {
+	return 0.5f * (n * (n + 1));
+}

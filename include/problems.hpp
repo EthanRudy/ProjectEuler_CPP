@@ -39,3 +39,4 @@
 #include "../solutions/p039.hpp"
 #include "../solutions/p040.hpp"
 #include "../solutions/p041.hpp"
+#include "../solutions/p042.hpp"
