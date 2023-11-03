@@ -102,6 +102,20 @@ bool pandigital(std::string str) {
 	return true;
 }
 
+bool pandigital(const std::string& str, int min, int max) {
+	std::vector<int> digits(max - min + 1, 0);
+
+	for (char c : str) {
+		++digits[(c - '0') - min];
+	}
+
+	for (int i = 0; i < digits.size(); ++i) {
+		if (digits[i] != 1) { return false; }
+	}
+
+	return true;
+}
+
 int gcd(int a, int b) {
 	int res = (a > b) ? b : a;
 	while (res > 0) {
